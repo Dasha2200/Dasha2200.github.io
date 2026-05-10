@@ -77,10 +77,13 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h2>Оформление заказа</h2>
-            <form action="https://formsubmit.co/sunrise-jewelry@yandex.ru?next=https://dasha2200.github.io/thank-you.html" method="POST">
+            
+            <!-- Исправлено: добавлен параметр _next для красивого редиректа -->
+            <form action="https://formsubmit.co/sunrise-jewelry@yandex.ru" method="POST">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_subject" value="Новый заказ с Sunrise Jewelry!">
+                <input type="hidden" name="_next" value="https://dasha2200.github.io/thank-you.html">
                 
                 <div class="form-group">
                     <label>Ваше имя *</label>
